@@ -2,7 +2,7 @@
 A simple classpath manager for lumo ClojureScript projects.
 
 # Movtivation
-[Lumo](https://github.com/anmonteiro/lumo) is a project that allows ClojureScript code targeting NodeJS to run quickly, without compilation, and depend on Node modules from NPM. The fact that lumo isn't tied to the JVM and is able to leverage the NPM ecosystem makes it an interesting platform for developing. The goal of torch-cljs is to make it easy to depend on other ClojureScript files in your project, as well as depend on ClojureScript NPM packages.
+[Lumo](https://github.com/anmonteiro/lumo) is a project that allows ClojureScript code targeting NodeJS to run quickly, without compilation, and depend on Node modules from NPM. The fact that lumo isn't tied to the JVM and is able to leverage the NPM ecosystem makes it an interesting platform for developing. The goal of torch-cljs is to make it easy to depend on other ClojureScript files in your project, as well as depend on ClojureScript NPM packages. A longer term goal is to provide a fast build tool for working with ClojureScript that targets NodeJS.
 
 # Dependencies
 Torch depends on lumo, and will not work unless lumo is on the path.
