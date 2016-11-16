@@ -1,0 +1,15 @@
+{
+  "name": "torch-cljs",
+  "version": "0.0.1",
+  "description": "A simple classpath manager for lumo ClojureScript projects",
+  "main": "torch.cljs",
+  "files": ["torch.cljs"],
+  "bin": {"torch": "./torch.cljs"}
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Peckman",
+  "license": "EPL",
+  "dependencies": {
+  }
+}
