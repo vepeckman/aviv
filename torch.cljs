@@ -16,7 +16,7 @@
 	([old-classpath path]
 	(let [package (read-json (str path "/package.json"))]
 		(if-let [sources (get package "cljs-source")]
-      (let [new-classpath (reduce #(str %1 ":" %2) old-classpath sources)
+      (let [new-classpath (reduce #(str %1 ":" path "/" %2) old-classpath sources)
             dependencies (keys (get package "dependencies"))
             paths (map #(str "node_modules/" %) dependencies)]
         (reduce build-classpath new-classpath paths))
@@ -39,7 +39,7 @@
 (defn main
   [& args]
   (let [entrypoint (get (read-json "./package.json") "main")]
-    (exec (str "lumo -c " (build-classpath) " "entrypoint)
+    (exec (str "lumo -c " (build-classpath) " " entrypoint)
           #(println %2))))
 
 (main)
