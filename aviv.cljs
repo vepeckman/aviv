@@ -1,5 +1,5 @@
 #!/usr/bin/env lumo
-(ns torch.core
+(ns aviv.core
 	(:require [cljs.nodejs :as nodejs]
             [cognitect.transit :as transit]
             [lumo.classpath :as classpath]
